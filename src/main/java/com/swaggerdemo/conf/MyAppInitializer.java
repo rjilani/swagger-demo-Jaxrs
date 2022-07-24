@@ -9,6 +9,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
+
 @WebListener
 public class MyAppInitializer implements ServletContextListener {
 

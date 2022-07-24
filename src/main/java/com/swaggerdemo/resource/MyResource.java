@@ -2,6 +2,8 @@ package com.swaggerdemo.resource;
 
 import com.swaggerdemo.model.City;
 import com.swaggerdemo.service.ICityService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 import java.util.List;
 import javax.inject.Inject;
@@ -25,6 +27,12 @@ public class MyResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @Operation(
+            summary = "get dummy",
+            description = "Get Dummy",
+            tags = {"dummy"}
+    )
+    @ApiResponse(responseCode = "200", description = "OK")
     public Response getCities() {
 
         List<City> cities = cityService.findAll();

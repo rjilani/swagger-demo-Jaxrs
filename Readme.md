@@ -21,3 +21,11 @@
 
 `curl -X PUT -d name=Kiev -d population=2877 localhost:8080/swagger-demo-Jaxrs/rest/cities/9 -i`
 
+## Swagger end points url
+
+`http://localhost:8080/swagger-demo-Jaxrs/rest/openapi.json`
+`http://localhost:8080/swagger-demo-Jaxrs/rest/openapi.yaml`
+
+## Swagger url
+
+`http://localhost:8080/swagger-demo-Jaxrs/index.html`
